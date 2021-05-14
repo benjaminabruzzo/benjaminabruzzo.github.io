@@ -6,10 +6,8 @@ git clone git@github.com:benjaminabruzzo/benjaminabruzzo.github.io.git
 
 cd benjaminabruzzo.github.io
 
-echo "Hello World" > index.html
+git remote rm origin && git remote add gh git@github.com:benjaminabruzzo/benjaminabruzzo.github.io.git
 
-git add --all
+echo "Hello World" > index.html && git add --all && git commit -m "Initial commit"
 
-git commit -m "Initial commit"
-
-git push -u origin main
+git push -u gh main
