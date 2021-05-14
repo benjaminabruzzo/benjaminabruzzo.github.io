@@ -11,3 +11,6 @@ git remote rm origin && git remote add gh git@github.com:benjaminabruzzo/benjami
 echo "Hello World" > index.html && git add --all && git commit -m "Initial commit"
 
 git push -u gh main
+
+
+scp -rp benjamin@saturn.local:~/Documents/webpages ~/webpages/benjaminabruzzo.github.io/
